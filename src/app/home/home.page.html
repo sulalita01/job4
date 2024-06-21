@@ -7,22 +7,33 @@
 </ion-header>
 
 <ion-content [fullscreen]="true" class="ion-padding">
-  <div class="ion-text-center"><img src="../../assets/image/11.png" style="width: 200px;"></div>
+  <div class="ion-text-center"><img src="../../assets/image/bmi.png" style="width: 200px;"></div>
   <ion-card color="medium" class="ion-padding">
     <ion-item>
       <ion-input label="กรอกน้ำหนัก :" placeholder="kg"></ion-input>
     </ion-item>
-      <ion-item>
-        <ion-input label="ส่วนสูง :" placeholder="cm"></ion-input>
-      </ion-item>
+    <br>
+    <ion-item>
+      <ion-input label="ส่วนสูง :" placeholder="cm"></ion-input>
+    </ion-item>
       <br>
       <ion-button color="warning" size="large" expand="block" shape="round">
         คำนวณ
       </ion-button>
-</ion-card>
-  <ion-button color="secondary" size="large" expand="block" shape="box">
-    ผลลัพธ์
-  </ion-button>
-  <ion-button color="tertiary" size="large" expand="block" shape="box">
-    แปรผล  </ion-button>
+  </ion-card>
+
+  <ion-card color="tertiary" class="ion-text-center">
+  <ion-card-header>
+    <ion-card-subtitle>ผลลัพธ์</ion-card-subtitle>
+    <ion-card-title>18.5</ion-card-title>
+  </ion-card-header>
+  </ion-card>
+
+  <ion-card color="primary" class="ion-text-center">
+  <ion-card-header>
+    <ion-card-subtitle>แปรผล</ion-card-subtitle>
+    <ion-card-title>อยู่ในเกณฑ์ปกติ</ion-card-title>
+  </ion-card-header>
+  </ion-card>
+
 </ion-content>
